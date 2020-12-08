@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>登录界面</title>
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	
+	<style type="text/css">
+		body{
+			background:url(../图片/背景图.jpg);
+			background-repeat: no-repeat;
+			/* 当内容高度大于图片高度时，背景图	像的位置相对于viewport固定 */    
+			background-attachment: fixed;  /*此条属性必须设置否则可能无效*/    
+			/* 让背景图基于容器大小伸缩 */   
+			background-size: cover;  
+			/* 设置背景颜色，背景图加载过程中会显示背景色 */   
+			background-color:#CCCCCC;
+		
+		}
+form{
+	text-align: center;
+	color:#FFFFFF;
+	margin-left:auto;
+    margin-right:auto;
+    width: 343px;
+    height: 400px;
+    padding:30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden;
+	width: 500px;					/*设置宽度，方便使其居中*/
+	margin: 40px auto auto auto;	/*上右下左*/
+	font-size: 25px;
+	height:700px;
+}
+#mytable{
+			text-align: left;
+			border:0px;
+			
+		}
+div{
+	background-color: rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+div img{
+	cursor: pointer;
+	transform: all 1s;
+}
+div img:hover{
+			transform: scale(1.4);
+			-webkit-transform: scale(1.4);
+		}
+.white{
+		text-decoration: none;
+		color: #FFFFFF;
+		font-size: 15px;
+		text-align: center;
+	}
+.Username{
+		background: rgba(0, 0, 0, 0.2) none repeat scroll !important;
+		color: #FFFFFF;
+	}
+.password{
+		background: rgba(0, 0, 0, 0.2) none repeat scroll !important;
+		color: #FFFFFF;
+		}
+	</style>
+	
+	
+</head>
+<body>
+	<div style="border-bottom: 1px solid">
+	<form action=" "   method="post" name="myform">
+		<table name="mytable">
+			<tr>
+				<td clospan="2" >
+					Login Interface
+				</td>
+			</tr>
+				<!-- 用户名-->
+			<tr>
+				<td>
+					<img src="../图片/注册界面logo/用户.png" alt="用户图标" height="5%" width="5%">
+					&nbsp;&nbsp;
+					<input type="text" id="username" name="user" placeholder="Username" class="Username" οnblur="validate_username(this.value)"  style="border:0px"/></td>
+			</tr>
+			
+			<!-- 学号-->
+			<tr>
+				<td>
+					<img  src="../图片/注册界面logo/其他.png" alt="用户图标" height="5%" width="5%">
+					&nbsp;&nbsp;
+					<input type="text" id="s_number" name="s_number" placeholder="Student Number" class="Username" οnblur="validate_username(this.value)"  style="border:0px"/></td>
+				<td id="test_user"></td>
+			</tr>
+			
+			<!-- 密码-->
+			<tr>
+				<td>
+					<img src="../图片/注册界面logo/QQ图片20200107144316.png" alt="密码图标" height="5%" width="5%">
+					&nbsp;&nbsp;
+					<input type="password" id="password" name="password" class="password" placeholder="Password" οnblur="validate_password(this.value)" style="border:0px"/>
+				</td>
+					<td id="test_pw"></td>
+			</tr>
+			<tr>
+				
+				<td >
+					<input type="submit" id="submit_form" value="Register" οnclick="return validate_form()"/>
+					<br>
+					<a href="注册界面.html" class="white"><font size="+1">Click me to register</font></a>
+				</td>
+			</tr>
+			<hr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>

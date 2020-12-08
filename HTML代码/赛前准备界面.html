@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>赛前准备界面</title>
+	<script type="text/javascript" src="js/jquery1.js"></script>
+	<script type="text/javascript" src="js/modernizr1.js"></script>	
+	
+<style type="text/css">
+body{
+		background:#000000;
+		background:url(../图片/界面图片/赛前准备.jpg) no-repeat center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}	
+.mytable1{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-size: 20px;
+	color: #000000;
+	width:100%;
+	background: #FFFFFF;
+	border:0px;
+}
+.white{
+		background:#FFFFFF;
+		text-decoration: none;
+		color:#000000;
+	}
+.white:hover{
+	color:#000000;	
+	
+}
+.white {
+	font-size: 20px;
+	transition: all 0.3s; 
+}
+.white:hover{
+	font-size: 30px;
+	transform: scale(1.4); 
+}	
+a:link,a:visited {
+/*去掉a标签链接的下划线的效果*/
+text-decoration: none;
+}	
+.div1{
+		background: #FFFFFF;
+	}
+form{
+	text-align: center;
+	color:#FFFFFF;
+	margin-left:auto;
+    margin-right:auto;
+    width: 343px;
+    height: 400px;
+    padding:30px;
+    border: 1px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; 
+	}
+</style>
+</head>
+<script>
+function myFunction()
+{
+    alert("你好，请先查询成绩！");
+}
+	</script>
+<body>
+<!--顶部标签-->
+	<div class="div1">
+	<table class="matable1">
+		<tr>
+		<td><a href="主界面2.html"><img src="../图片/主界面背景图/标题超链接.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>
+				<a href="赛前准备界面.html" class="white">Competitive readiness&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>		<!--赛前管理-->
+		    </td>
+			<td>
+				<a href="比赛管理界面.html" target="_blank" class="white">Competition management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>		<!--比赛管理-->
+			</td>
+			<td>
+				<a href="查询.html" target="_blank" class="white">Inquire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>			<!--查询-->
+			</td>
+			<td>
+				<a href="查询.html" target="_blank" class="white" onclick="myFunction()">Print&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>		<!--打印-->
+			</td>
+			<td>
+				<a href="javascript:if(confirm('确实注销吗?')){location='主界面.html'}" class="white">Logout</a>
+			</td>
+		</tr>
+	</table>
+</div>		
+<!--赛前准备界面-->
+
+	<br><br><br><br><br><br>
+	<div>
+	<form>
+		<input type="text" class="" placeholder="输入你的姓名"><br><br>
+		<input type="text" class="" placeholder="输入你的学号"><br><hr>
+		<input type="radio" class="white" value="" name="sex">男
+		<input type="radio" class="white" value="" name="sex">女<br><hr>
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">400米（男）<br>
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">400米（女）<br>	
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">跳远（男）<br>	
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">跳远（女）<br>	
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">跳高（男）<br>
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">跳高（女）<br>
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">1000米（男）<br>
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">800（女）<br>
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">100（男）<br>
+		<input type="checkbox" class="white" vlaue="1" placeholder="选择参加项目">100（女）<br><hr><br>
+		
+		<input type="submit" value="提交" action=""/>
+		&nbsp;&nbsp;&nbsp;
+		<input type="reset" value="重置" action=""/>
+	</form>	
+	</div>
+</body>
+</html>

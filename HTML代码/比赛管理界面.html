@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>比赛管理界面</title>
+	
+<style type="text/css">
+body{
+		background:url(../图片/界面图片/比赛管理.jpg);
+	    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	}
+.div1{background: #FFFFFF;}
+.mytable{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-size: 20px;
+	color: #000000;
+	width:100%;
+	background: #FFFFFF;
+	border:0px;
+}
+.white{
+		background:#FFFFFF;
+		text-decoration: none;
+		color:#000000;
+	}
+.white:hover{
+	color:#000000;	
+	
+}
+.white {
+	font-size: 20px;
+	transition: all 0.3s; 
+}
+.white:hover{
+	font-size: 30px;
+	transform: scale(1.2); 
+}	
+a:link,a:visited {
+/*去掉a标签链接的下划线的效果*/
+text-decoration: none;
+}
+
+/* 管理界面*/
+	form{	
+	text-align: center;
+	color:#FFFFFF;
+	margin-left:auto;
+    margin-right:auto;
+    width: 343px;
+    height: 400px;
+    padding:30px;
+    border: 1px solid rgba(0,0,0,.2);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    background: rgba(0, 0, 0, 0.5); 
+    -moz-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
+    overflow: hidden; }
+	.td1{background: rgba(0, 0, 0, 0.2) none repeat scroll !important;
+			color: #FFFFFF;
+	border: 0px;}
+	.td1{	font-size: 20px;
+	transition: all 0.3s; }
+	.td1:hover{	font-size: 15px;
+	transform: scale(1.2);}
+</style>
+</head>
+	
+<body>
+	<!--顶部标签-->
+<div class="div1">
+	<table class="matable1">
+		<tr>
+		<td><a href="主界面2.html"><img src="../图片/主界面背景图/标题超链接.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>
+				<a href="赛前准备界面.html" class="white">Competitive readiness&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>		<!--赛前管理-->
+		    </td>
+			<td>
+				<a href="比赛管理界面.html" target="_blank" class="white">Competition management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>		<!--比赛管理-->
+			</td>
+			<td>
+				<a href="查询.html" target="_blank" class="white">Inquire&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>			<!--查询-->
+			</td>
+			<td>
+				<a href="查询.html" target="_blank" class="white" onclick="myFunction()">Print&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>		<!--打印-->
+			</td>	
+			<td>
+				<a href="javascript:if(confirm('确实注销吗?')){location='主界面.html'}" class="white">Logout</a>
+			</td>
+		</tr>
+	</table>
+</div><br><br><br><br><br><br><br>
+	<!--管理界面-->
+<div class="div2">
+	<form>
+	<table class="table2">
+		<tr>
+			Enter performance
+		</tr><br><br><br>
+		<tr>
+		<td>
+			<input type="text" placeholder="Student Name" class="td1"><br><br>
+			<input type="text" placeholder="Student Number" class="td1"><br><br>
+			<input type="text" placeholder="Athletic Serial" class="td1"><br><br>
+			<input type="text" placeholder="project" class="td1">	<br><br>
+			<input type="text" placeholder="Gread" class="td1">	<br><br>
+			<input type="text" placeholder="College" class="td1">	<br><br>
+			recoed-breaking?&nbsp;&nbsp;&nbsp;
+			<input type="radio" name="sex" class="td1">YES
+			<input type="radio" name="sex" class="td1">NO
+			<br><br>
+			<input type="submit" value="submit">
+			<br><br>
+		</td>
+		</tr>
+	</table><br><br><br><br><br><br><br><br>
+</form>	
+</div>	
+	
+</body>
+</html>
